@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <header>
@@ -45,6 +45,17 @@
       <p>&copy; 2023 Mergington High School</p>
     </footer>
 
-    <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
+    <!-- Confirmation modal (hidden by default) -->
+    <div id="confirm-modal" class="hidden confirm-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+      <div class="confirm-modal">
+        <h4 id="confirm-title">Confirm removal</h4>
+        <p id="confirm-message">Are you sure?</p>
+        <div class="confirm-actions">
+          <button id="confirm-cancel" class="btn-secondary">Cancel</button>
+          <button id="confirm-ok" class="btn-danger">Remove</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
